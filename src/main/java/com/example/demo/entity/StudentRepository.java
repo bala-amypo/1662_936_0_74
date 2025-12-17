@@ -1,6 +1,6 @@
 package com.example.demo.entity
 
-import java.
+import org.springframework.data.jpa.respository
 
 @Repository
 pubilc interface StudentRepository extends JpaRepository<StudentEntity,Integer>
