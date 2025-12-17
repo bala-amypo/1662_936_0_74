@@ -3,7 +3,7 @@ package com.example.demo.entity
 import java.
 
 @Repository
-pubilc interface StudentRepos
+pubilc interface StudentRepository extends JpaRepository<StudentEntity,Integer>
 public class StudentEntity{
     private Integer id;
     private String username;
