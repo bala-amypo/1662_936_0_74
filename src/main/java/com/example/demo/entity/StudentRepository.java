@@ -2,7 +2,8 @@ package com.example.demo.entity
 
 import java.
 
-@Entity
+@Repository
+pubilc interface StudentRepos
 public class StudentEntity{
     private Integer id;
     private String username;
