@@ -6,5 +6,9 @@ public class ValidationEntity{
     @Id
     @GenerateValue(strategy=GenerationType.IDENTITY)
     private Long id;
-    @NotNul
+    @NotNull
+    private String username;
+     private String email ;
+      private String password;
+       private int age;
 }
