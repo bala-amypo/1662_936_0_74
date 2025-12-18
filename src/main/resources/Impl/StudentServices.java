@@ -9,4 +9,6 @@ public class Studentcontroller{
 public StudentEntity postval(@RequestBody StudentEntity entity){
     return services.postdata(entity);
 }
+@GetMapping("/get")
+public List<StudentEntity>
 }
