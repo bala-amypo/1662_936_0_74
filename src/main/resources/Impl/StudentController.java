@@ -14,5 +14,5 @@ public List<StudentEntity>getval(){
     return services.getAllData()
 }
 @DeleteMapping("/delete/{id}")
-public string
+public string ,,,,
 }
