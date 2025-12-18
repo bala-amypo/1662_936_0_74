@@ -12,4 +12,4 @@ import org.springframework.web.blind.annotation.GetMapping;
 @RestController
 public class Studentcontroller{
 @Autowired Studentservices services;
-@postMapping("/post")0
+@postMapping("/post")                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
