@@ -6,3 +6,5 @@ public stuedentEntity postData(StudentEntity stu){
 }
 @Override
 public List<studentEntity>
+
+@GetMap

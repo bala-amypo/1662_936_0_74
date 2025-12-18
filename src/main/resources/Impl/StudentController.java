@@ -12,8 +12,6 @@ public StudentEntity postval(@RequestBody StudentEntity entity){
 @GetMapping("/get")
 public List<StudentEntity>getval(){
     return services.getAllData()
-     
-
-
 }
+@DeleteMapping("/delete/{id}")
 }
