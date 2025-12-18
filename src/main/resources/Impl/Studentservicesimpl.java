@@ -7,6 +7,7 @@ import com.example.demo.entity.StudentEntity;
 import com.example.demo.service.StudentService;
 import java.util.List;
 import com.example.demo.repository.StudentRepo;
+
 @Service
 
 public class StudentServiceImpl implements StudentService{
