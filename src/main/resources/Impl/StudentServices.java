@@ -1,4 +1,8 @@
 Package com.example.demo.services;
 
 @override
-public stu
+public stuedentEntity postData(StudentEntity stu){
+    return student.save(stu);
+}
+@Override
+public List<studentEntity>
