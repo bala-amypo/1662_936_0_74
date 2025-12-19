@@ -1,4 +1,6 @@
 package com.example.demo.entity;
 
-public class TimeStameEntity;
- 
+public class TimeStameEntity{
+
+    private Integer 
+}
