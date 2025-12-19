@@ -1,13 +1,41 @@
- public class ValidationEntity{
+package com.example.demo.entity;
+
+import java.time.LocalDateTime;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
+import jakarta.persistence.PrePersist;
+import jakarta.persistence.PreUpdate;
+
+import java.util.*;
+@Entity
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class TimeStampEntity{
+    @Id
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
+    private Long id;
+    private String name;
     private String email;
-    @Size(min=2,max=30,message="must be 2 to 3")
-    private String password;
+    private LocalDateTime createdAt;
+    private LocalDateTime updatedAt;
 
-    private Integer rollnumber;
-
-    import java.time.LocalDateTime; 
-    private LocalDataTime createAt;
-    private LocalDateTime updateAt;
-
-
+    @PrePersist
+    public void Oncreated(){
+        LocalDataTime now=LocalDateTime.now();
+       this.createdAt=now;
+       this.updateAt=now;
+    }
+    @PreUpdate
+    public void Onupdate(){
+        LocalDataTime now=LocalDateTime.now();
+        this.updateAt=now;
+    }
 }
