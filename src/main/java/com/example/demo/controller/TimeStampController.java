@@ -5,5 +5,7 @@ public class ValidationEntity{
 
     private Integer rollnumber;
 
-    import java.time.Local
+    import java.time.LocalDateTime;
+    private LocalDataTime createAt;
+    private LocalDateTime updateAt;
 }
