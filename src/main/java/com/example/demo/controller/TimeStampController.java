@@ -1,4 +1,4 @@
 public class ValidationEntity{
     private String email;
-    @Size
+    @Size(min=2,ma)
 }
