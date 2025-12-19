@@ -1,4 +1,4 @@
-public class ValidationEntity{
+ public class ValidationEntity{
     private String email;
     @Size(min=2,max=30,message="must be 2 to 3")
     private String password;
@@ -8,6 +8,6 @@ public class ValidationEntity{
     import java.time.LocalDateTime;
     private LocalDataTime createAt;
     private LocalDateTime updateAt;
-                                                                                                                                                                                                    
+
 
 }
