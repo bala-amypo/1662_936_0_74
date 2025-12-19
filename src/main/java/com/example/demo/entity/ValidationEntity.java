@@ -17,5 +17,16 @@ public class ValidationEntity{
        private String Email
        @
        private Sting password;
+
        private int age; 
+@Entity
+
+
+
+
+
 }
+
+
+
+
